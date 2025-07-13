@@ -1,0 +1,29 @@
+<!-- templates/summary.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document Summary</title>
+</head>
+<body>
+    <h2>📄 Document Summary</h2>
+    <p>{{ summary }}</p>
+
+    <hr>
+
+    <h3>🤔 Ask Anything</h3>
+    <form action="/ask" method="POST">
+        <label for="question">Enter your question:</label><br>
+        <input type="text" name="question" required size="60">
+        <br><br>
+        <button type="submit">Ask</button>
+    </form>
+
+    <hr>
+
+    <h3>🧠 Challenge Me</h3>
+    <form action="/challenge" method="GET">
+        <button type="submit">Start Challenge</button>
+    </form>
+</body>
+</html>
